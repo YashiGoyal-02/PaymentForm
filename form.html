@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="C:\Users\hp\Desktop\html\payment form\form.css" rel="stylesheet" type="text/css">
+    <title>Payment Form</title>
+</head>
+<body bgcolor="pink">
+    <hr>
+    <form action="">
+        <h1>Payment form</h1>
+        <p id="a">Required fields are followed by *</p>
+        <h2 class="b">Contact Information</h2>
+        <p>First Name * : <input type="text" name="fname" required></p>
+        <p>Last Name : <input type="text" name="lname"></p>
+        <fieldset>  
+            <legend>Gender * :</legend>      
+            <p>
+                Male <input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="female" required>
+                Others <input type="radio" name="gender" id="others" required>
+            </p>
+        </fieldset>
+        <p>Contact Number * : <input type="number" name="pi" id="pi" required></p>
+        <p id="c">Address : <textarea name="address" id="add" cols="100" rows="8"></textarea></p>
+        <p>Email * : <input type="email" name="mail" id="mail" required></p>
+        <p>Pin Code * : <input type="number" name="pin" id="pin" required></p>
+        <hr>
+        <h2 class="b">Payment Information</h2>
+        <p>Card Type * : 
+            <select name="card" id="card" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="visa">VISA</option>
+                <option value="upay">U-Pay</option>
+                <option value="master_card">Master Card</option>
+                <option value="paytm">Paytm</option>
+                <option value="ex">American Express</option>
+            </select>
+        </p>
+        <p>Card Number * : <input type="number" name="card_no" id="card_no" required></p>
+        <p>Expiry Date * : <input type="date" name="expiry" id="expiry" required></p>
+        <p>Amount * : <input type="number" name="card_no" id="card_no" required></p>
+        <p>CVV * : <input type="password" name="cvv" id="cvv" required></p>
+        <input type="submit" value="Pay Now">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
